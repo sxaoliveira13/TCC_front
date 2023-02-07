@@ -102,6 +102,9 @@ function ResponsiveAppBar() {
                 <MenuItem>
                  <ColorButton href="https://liag.ft.unicamp.br/computacaocriativa/metodos/">Métodos</ColorButton>
                 </MenuItem>
+                <MenuItem>
+                 <ColorButton href="../Login/Login.js">Login</ColorButton>
+                </MenuItem>
 
             </Menu>
           </Box>
@@ -133,6 +136,9 @@ function ResponsiveAppBar() {
                 </MenuItem>
                 <MenuItem>
                  <ColorButton href="https://liag.ft.unicamp.br/computacaocriativa/metodos/">Métodos</ColorButton>
+                </MenuItem>
+                <MenuItem>
+                 <ColorButton href="#login">Login</ColorButton>
                 </MenuItem>
           </Box>
 
