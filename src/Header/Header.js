@@ -11,9 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 
-const settings = ['Login'];
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: 'black',
@@ -23,7 +23,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
 }));
 
 
-function ResponsiveAppBar() {
+const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -41,6 +41,8 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+
 
   return (
     <AppBar position="static" color="inherit">
@@ -102,9 +104,7 @@ function ResponsiveAppBar() {
                 <MenuItem>
                  <ColorButton href="https://liag.ft.unicamp.br/computacaocriativa/metodos/">Métodos</ColorButton>
                 </MenuItem>
-                <MenuItem>
-                 <ColorButton href="../Login/Login.js">Login</ColorButton>
-                </MenuItem>
+
 
             </Menu>
           </Box>
@@ -137,9 +137,6 @@ function ResponsiveAppBar() {
                 <MenuItem>
                  <ColorButton href="https://liag.ft.unicamp.br/computacaocriativa/metodos/">Métodos</ColorButton>
                 </MenuItem>
-                <MenuItem>
-                 <ColorButton href="#login">Login</ColorButton>
-                </MenuItem>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -164,11 +161,10 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem>
+                  <Link to = "/Login" textAlign="center">Login</Link>
                 </MenuItem>
-              ))}
+
             </Menu>
           </Box>
         </Toolbar>

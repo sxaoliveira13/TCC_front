@@ -1,8 +1,12 @@
 import './App.css';
 import * as React from 'react';
-import Login from './Login/login';
-import { Route, BrowserRouter } from "react-router-dom";
-import PensamentoComputacional from './PensamentoComputacional';
+import Header from './Header/Header';
+import Footer from './footer/footer';
+import PensamentoComputacional from './pages/PensamentoComputacional';
+import Login from './pages/login';
+import JogosEducativos from './pages/JogosEducativos';
+import Metodos from './pages/Metodos';
+import { Switch, Route} from 'react-router-dom';
 
 
 
@@ -10,16 +14,21 @@ import PensamentoComputacional from './PensamentoComputacional';
 function App() {
 
   return (
-      // <BrowserRouter>
-      //      <Route component = { PensamentoComputacional }  path="/PensamentoComputacional" />
-      //      <Route component = { Login }  path="/login" />
-      //      <Route component = { Header }  path="/header" />
+      <>
+      <Header/>
+      <main>
+      <div className="container mt-2" style={{ marginTop: 40 }}>
+      <Switch> 
+        <Route path = "/Login" component = {Login}/>
+        <Route path = "/PensamentoComputacional" component = {PensamentoComputacional}/>
+        <Route path = "/JogosEducativos" component = {JogosEducativos}/>
+        <Route path = "/Metodos" component = {Metodos}/>
+      </Switch>
+      </div>
 
-      //  </BrowserRouter>
-<div>
-        <PensamentoComputacional/>
-  </div>
-
+      </main>
+      <Footer/>
+     </>
       
   )
  
