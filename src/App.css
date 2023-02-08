@@ -17,3 +17,18 @@
   color: #61dafb;
 }
 
+.tabela {
+  width: 100vw;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+thead {
+  width: 100%;
+}
+
+.table-filter {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
