@@ -14,7 +14,7 @@ Rodar tambem:
 
 rode o comando:
 
-## `npm start
+## `npm start`
 
 Isso abrirá a page no seu navegador padrao!
 
