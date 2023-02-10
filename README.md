@@ -10,9 +10,9 @@ Primeiramente precisa ter o pacote de node instalado no seu computador, se nao t
 
 Na pasta do projeto abra um terminal e rode 
 ### `npm install`
-### `npm remove react-route-dom`
+### `npm remove react-router-dom`
 Rodar tambem: 
-### `npm install react-route-dom@5`
+### `npm install react-router-dom@5`
  
  rode o comando: 
 ### `npm start`
