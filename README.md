@@ -6,12 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Primeiramente precisa ter o pacote de node instalado no seu computador, se nao tiver pode baixar aqui: 
 
-(https://nodejs.org/en/download/)
+(https://nodejs.org/en/)
 
 Na pasta do projeto abra um terminal e rode 
 ### `npm install`
 
-Apos a pasta "node_modules" aparecer, rode o comando: 
+Rodar tambem: 
+### `npm install react-route-dom@5`
+ 
+ rode o comando: 
 ### `npm start`
 
 Isso abrirá a page no seu navegador padrao! 
