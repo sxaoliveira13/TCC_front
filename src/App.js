@@ -1,6 +1,7 @@
 import './App.css';
 import * as React from 'react';
 import Header from './Header/Header';
+import MCOHeader from './Header/MCOHeader';
 import Footer from './footer/footer';
 import PensamentoComputacional from './pages/PensamentoComputacional';
 import Login from './pages/login';
@@ -16,6 +17,7 @@ function App() {
   return (
       <>
       <Header/>
+      <MCOHeader/>
       <main>
       <div className="container mt-2" style={{ marginTop: 40 }}>
       <Switch> 
@@ -27,7 +29,6 @@ function App() {
       </div>
 
       </main>
-      <Footer/>
      </>
       
   )

@@ -132,10 +132,13 @@ const ResponsiveAppBar = () => {
                  <ColorButton href="https://liag.ft.unicamp.br/act/#">Início</ColorButton>
                 </MenuItem>
                 <MenuItem>
-                 <ColorButton href="https://liag.ft.unicamp.br/computacaocriativa/">Computação Criativa</ColorButton>
+                 <ColorButton href="https://liag.ft.unicamp.br/PensamentoComputacional">Artigos</ColorButton>
                 </MenuItem>
                 <MenuItem>
-                 <ColorButton href="https://liag.ft.unicamp.br/computacaocriativa/metodos/">Métodos</ColorButton>
+                 <ColorButton href="https://liag.ft.unicamp.br/JogosEducativos">Jogos Educativos</ColorButton>
+                </MenuItem>
+                <MenuItem>
+                 <ColorButton href="https://liag.ft.unicamp.br/Metodos">Métodos</ColorButton>
                 </MenuItem>
           </Box>
 
